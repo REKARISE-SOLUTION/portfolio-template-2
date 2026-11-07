@@ -1,0 +1,9 @@
+function ProjectArt({ theme }) {
+  return <div className={`project-art ${theme}`} aria-hidden="true">
+    {theme === "forma" && <div className="mini-site"><div className="mini-nav"><b>forma.</b><span>Spaces with purpose ↗</span></div><div className="forma-title">Spaces for<br /><em>living well.</em></div><div className="architecture"><div /><div /><div /></div><div className="mini-bottom">ARCHITECTURE · INTERIORS <span>01 / 03</span></div></div>}
+    {theme === "orbit" && <div className="mini-dashboard"><div className="dash-sidebar"><b>◉</b><span>⌂</span><span>▥</span><span>□</span></div><div className="dash-main"><div className="mini-nav"><b>Overview</b><span>This month ▾</span></div><p className="dash-muted">Your business, at a glance.</p><div className="dash-metrics"><div><small>Revenue</small><b>$24,680</b><em>↗ 12.8%</em></div><div><small>Customers</small><b>1,842</b><em>↗ 8.2%</em></div></div><div className="chart"><span>Revenue overview</span><div className="bars">{[35,58,44,72,55,82,64,94,76,100,85,112].map((height,i) => <i key={i} style={{height}} />)}</div></div></div></div>}
+    {theme === "olive" && <div className="mini-store"><div className="mini-nav"><b>olive & earth</b><span>Objects for everyday living</span></div><div className="store-copy">Less, but<br /><em>better.</em><small>Considered objects. Natural living.</small></div><div className="still-life"><div className="vase vase-back" /><div className="vase vase-front" /><div className="vase-shadow" /></div><div className="mini-bottom">EXPLORE THE COLLECTION <span>↗</span></div></div>}
+    {theme === "folio" && <div className="mini-brand"><div className="mini-nav"><span>VISUAL IDENTITY</span><span>EST. / CONCEPT</span></div><div className="brand-word">folio<span>®</span></div><div className="brand-symbol">✳</div><div className="mini-bottom">IDEAS INTO IDENTITY.<span>MAKE YOUR MARK.</span></div></div>}
+  </div>;
+}
+export default ProjectArt;

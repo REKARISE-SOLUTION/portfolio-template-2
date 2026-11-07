@@ -1,10 +1,4 @@
 function Journey() {
-  return <section id="journey" className="journey">
-    <div className="section-title"><h2>Education &amp; Experience</h2><p>Sample entries. Replace with your own background.</p></div>
-    <div className="journey-container">
-      <div className="journey-column"><h3 className="journey-heading">Education</h3><div className="timeline"><div className="timeline-item"><span>Start Year - End Year</span><h3>Your Degree or Qualification</h3><h4>Your Institution</h4><p>Describe your area of study.</p></div></div></div>
-      <div className="journey-column"><h3 className="journey-heading">Work Experience</h3><div className="timeline"><div className="timeline-item"><span>Start Year - End Year</span><h3>Your Job Title</h3><h4>Company Name</h4><p>Describe your responsibilities and contributions.</p></div></div></div>
-    </div>
-  </section>;
+ return <section id="journey" className="journey"><div><p className="kicker">04 / THE JOURNEY</p><h2>Always learning.<br /><em>Always making.</em></h2><p className="journey-intro">A place for the experiences that shaped your practice.</p></div><div className="timeline">{[{date:"YOUR DATES",title:"Your current role",place:"Company Name",text:"Share what you do, the responsibilities you own, and the contributions you're proud of."},{date:"YOUR DATES",title:"Your previous experience",place:"Company Name",text:"Highlight the skills and perspectives you developed along the way."},{date:"YOUR DATES",title:"Your degree or qualification",place:"Institution Name",text:"Add your field of study or a meaningful learning experience."}].map((item,i) => <article className="timeline-item" key={item.title}><span className="timeline-index">0{i+1}</span><div><span className="timeline-date">{item.date}</span><h3>{item.title}</h3><h4>{item.place}</h4><p>{item.text}</p></div></article>)}</div></section>;
 }
 export default Journey;

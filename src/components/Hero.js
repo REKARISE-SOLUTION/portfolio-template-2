@@ -1,22 +1,22 @@
-import profile from "../assets/profile-placeholder.svg";
-import { motion } from "framer-motion";
-import { Typewriter } from "react-simple-typewriter";
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from "react-icons/fa";
-
+import { FaArrowDown, FaArrowRight, FaAsterisk } from "react-icons/fa";
 function Hero() {
-  return (
-    <section className="hero" id="home">
-      <motion.div className="hero-left" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-        <p className="eyebrow">Available for new opportunities</p>
-        <h1>Your <span>Name</span></h1>
-        <h2><Typewriter words={["Your Professional Title", "Full Stack Developer", "Software Engineer", "IoT Developer", "Remote Support Engineer"]} loop={0} cursor cursorStyle="|" typeSpeed={75} deleteSpeed={45} /></h2>
-        <p className="description">Introduce yourself here and describe the value you bring to your clients or team.</p>
-        <div className="buttons"><a href="#projects" className="btn-primary">View my work <FaArrowRight /></a><a href="#contact" className="btn-secondary">Contact me</a></div>
-        <div className="socials"><a href="https://example.com/github" target="_blank" rel="noreferrer" aria-label="GitHub profile"><FaGithub /></a><a href="https://example.com/linkedin" target="_blank" rel="noreferrer" aria-label="LinkedIn profile"><FaLinkedin /></a><a href="mailto:hello@example.com" aria-label="Email Your Name"><FaEnvelope /></a></div>
-      </motion.div>
-      <motion.div className="hero-right" initial={{ opacity: 0, scale: 0.94 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.1 }}><div className="portrait-frame"><img src={profile} alt="Your Name" fetchPriority="high" /></div></motion.div>
-    </section>
-  );
+  return <section className="hero" id="home">
+    <div className="hero-topline"><span><i className="status-dot" /> Open for collaborations</span><span>Independent designer & developer</span></div>
+    <div className="hero-layout">
+      <div className="hero-copy"><p className="kicker">HELLO, I'M YOUR NAME</p>
+        <h1>Good ideas.<br />Thoughtful design.<br /><span>Real impact.</span></h1>
+        <p className="description">I turn complex problems into simple, considered digital experiences. A little strategy, a lot of craft, and a love for the details.</p>
+        <div className="buttons"><a className="btn-primary" href="#projects">Explore my work <FaArrowRight /></a><a className="text-link" href="#contact">Let's talk <span>↗</span></a></div>
+        <div className="hero-footnote"><span className="small-star">✳</span><p>Built with purpose.<br /><strong>Made to feel different.</strong></p></div>
+      </div>
+      <div className="hero-art" aria-label="Abstract geometric composition in orange and cream">
+        <div className="art-grid" /><span className="art-caption">A STUDY IN FORM & FUNCTION</span>
+        <div className="art-orbit" /><div className="art-disc" /><div className="art-sphere" /><div className="art-block" /><FaAsterisk className="art-asterisk" />
+        <div className="art-label"><span>Creative thinking.<br />Clear execution.</span><span>↗</span></div>
+        <span className="art-index">FIG. 01 / CREATIVE PRACTICE</span>
+      </div>
+    </div>
+    <a href="#projects" className="scroll-cue"><FaArrowDown /> Scroll to discover</a>
+  </section>;
 }
-
 export default Hero;

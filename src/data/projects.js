@@ -1,77 +1,8 @@
-import placeholder from "../assets/project-placeholder.svg";
-
+// Illustrative concept projects. Replace these with your own work.
 const projects = [
-  {
-    "id": "sample-project-1",
-    "title": "Sample Project 1",
-    "featured": true,
-    "year": "Sample",
-    "image": [
-      placeholder
-    ],
-    "award": "Sample project",
-    "competition": "Your client or organization",
-    "role": "Your role",
-    "description": "Replace this example with a description of your project and the problem it solves.",
-    "achievement": "Describe the outcome of your project.",
-    "technologies": [
-      "React",
-      "JavaScript"
-    ]
-  },
-  {
-    "id": "sample-project-2",
-    "title": "Sample Project 2",
-    "featured": true,
-    "year": "Sample",
-    "image": [
-      placeholder
-    ],
-    "award": "Sample project",
-    "competition": "Your client or organization",
-    "role": "Your role",
-    "description": "Replace this example with a description of your project and the problem it solves.",
-    "achievement": "Describe the outcome of your project.",
-    "technologies": [
-      "React",
-      "JavaScript"
-    ]
-  },
-  {
-    "id": "sample-project-3",
-    "title": "Sample Project 3",
-    "featured": true,
-    "year": "Sample",
-    "image": [
-      placeholder
-    ],
-    "award": "Sample project",
-    "competition": "Your client or organization",
-    "role": "Your role",
-    "description": "Replace this example with a description of your project and the problem it solves.",
-    "achievement": "Describe the outcome of your project.",
-    "technologies": [
-      "React",
-      "JavaScript"
-    ]
-  },
-  {
-    "id": "sample-project-4",
-    "title": "Sample Project 4",
-    "featured": true,
-    "year": "Sample",
-    "image": [
-      placeholder
-    ],
-    "award": "Sample project",
-    "competition": "Your client or organization",
-    "role": "Your role",
-    "description": "Replace this example with a description of your project and the problem it solves.",
-    "achievement": "Describe the outcome of your project.",
-    "technologies": [
-      "React",
-      "JavaScript"
-    ]
-  }
+  { id: "forma", title: "Forma Studio", category: "Web design", theme: "forma", label: "Architecture & interiors", year: "Concept 01", description: "A quiet, editorial website concept for an architecture studio. Generous space and strong typography let the work speak.", technologies: ["Art direction", "UI design", "React"], role: "Design & development", detail: "The concept explores an image-led portfolio, clear project navigation, and an understated visual identity. Replace this entry with your own process, deliverables, and results." },
+  { id: "orbit", title: "Orbit Dashboard", category: "Development", theme: "orbit", label: "Analytics platform", year: "Concept 02", description: "An approachable analytics dashboard concept that brings clarity to everyday business decisions.", technologies: ["Product design", "Dashboard", "React"], role: "Product design & frontend", detail: "An exploration of dashboard hierarchy, reusable components, and readable data visualization. The figures in this preview are illustrative sample data." },
+  { id: "olive", title: "Olive & Earth", category: "Web design", theme: "olive", label: "Lifestyle & commerce", year: "Concept 03", description: "A warm, considered storefront concept for everyday objects, with a focus on natural materials and simple shopping journeys.", technologies: ["E-commerce", "UI design", "Development"], role: "Design & development", detail: "This storefront study combines tactile shapes, a restrained palette, and a clear product hierarchy. It is an illustrative visual concept, not a working online store." },
+  { id: "folio", title: "Folio Identity", category: "Branding", theme: "folio", label: "Visual identity system", year: "Concept 04", description: "A bold identity concept that balances expressive typography with a flexible, minimal design system.", technologies: ["Identity", "Typography", "Design system"], role: "Brand direction", detail: "A visual identity exploration across a wordmark, color system, and digital applications. Replace these concept details with a real case study when customizing the template." }
 ];
 export default projects;

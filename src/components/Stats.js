@@ -1,5 +1,4 @@
-const stats = [["4", "Sample projects"], ["1", "Sample qualification"], ["Your", "Experience"], ["Your", "Specialties"]];
 function Stats() {
-  return <aside className="stats" aria-label="Portfolio highlights">{stats.map(([value, label]) => <div className="stat" key={label}><strong>{value}</strong><p>{label}</p></div>)}</aside>;
+  return <aside className="specialty-strip" aria-label="Areas of practice">{["Digital experiences", "Creative development", "Thoughtful interfaces", "Meaningful details"].map(text => <span key={text}><b aria-hidden="true">✳</b>{text}</span>)}</aside>;
 }
 export default Stats;

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-const links = ["home", "about", "journey", "skills", "certificates", "projects", "contact"];
+const links = ["projects", "about", "skills", "journey", "contact"];
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -19,10 +19,10 @@ function Navbar() {
 
   return (
     <nav className="navbar" aria-label="Primary navigation">
-      <a className="logo" href="#home" onClick={() => setOpen(false)} aria-label="Company portfolio, home">company<span>.dev</span></a>
+      <a className="logo" href="#home" onClick={() => setOpen(false)} aria-label="Company portfolio, home">yourname<span>®</span></a>
       <button className="menu-toggle" type="button" aria-label={open ? "Close navigation menu" : "Open navigation menu"} aria-expanded={open} onClick={() => setOpen(!open)}>{open ? <FaTimes /> : <FaBars />}</button>
       <ul className={`nav-links ${open ? "is-open" : ""}`}>
-        {links.map((link) => <li key={link}><a className={`${active === link ? "active" : ""} ${link === "contact" ? "nav-cta" : ""}`} href={`#${link}`} onClick={() => setOpen(false)}>{link.charAt(0).toUpperCase() + link.slice(1)}</a></li>)}
+        {links.map((link) => <li key={link}><a className={`${active === link ? "active" : ""} ${link === "contact" ? "nav-cta" : ""}`} href={`#${link}`} onClick={() => setOpen(false)}>{({projects: "Work", about: "About", skills: "Expertise", journey: "Experience", contact: "Let's talk ↗"})[link]}</a></li>)}
       </ul>
     </nav>
   );

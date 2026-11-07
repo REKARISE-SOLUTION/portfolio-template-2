@@ -1,5 +1,4 @@
 function Footer() {
-  return <footer><a className="footer-brand" href="#home">company<span>.dev</span></a><p>© 2026 Your Name. Built with React.</p><div className="footer-links"><a href="#projects">Projects</a><a href="#contact">Contact</a></div></footer>;
+ return <footer><a className="footer-brand" href="#home">yourname<span>®</span></a><p>© {new Date().getFullYear()} Your Name. Made with intention.</p><a className="back-top" href="#home">Back to top ↑</a><small className="demo-disclaimer">Portfolio template · All projects and profile details are illustrative.</small></footer>;
 }
-
 export default Footer;
